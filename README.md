@@ -1,0 +1,121 @@
+This content is provided by the team at [DoiT Internationa](https://doit-intl.com), a global product and service organization dedicated to making the public cloud accessible while secure for all.
+
+# Secure configuration
+TODO: add diagram
+
+# Checklists
+## Initial setup
+- [ ] Configure org policies
+  - [ ] Restrict allowed IAM domains
+  - [ ] Disable key download
+  - [ ] Disable default network
+  - [ ] Disable external IP
+  - [ ] Require shielded VM
+- [ ] Prepare for VPC service controls (data protection)
+  - [ ] Create access policy (one per org)
+- [ ] Disable org-level roles
+  - [ ] Billing admin
+  - [ ] Project creator
+- [ ] Define disaster recovery plan
+  - [ ] DR team and contacts
+  - [ ] Geographical regions
+  - [ ] RTO, RPO
+  - [ ] Data backups
+  - [ ] Configuration management
+  - [ ] Continuous deployment
+  - [ ] Test schedule (at least annual)
+- [ ] Establish user groups in GSuite / Cloud Identity
+  - [ ] Organization Admin
+  - [ ] Network Admin
+  - [ ] Security Admin
+  - [ ] Billing Admin
+  - [ ] Devops
+  - [ ] Developers
+  - [ ] Data Scientists
+  - [ ] Contractors
+  - [ ] Teams (project or folder-level as you grow)
+- [ ] Establish resource hierarchy
+  - [ ] Define folder and project hierarchy
+  - [ ] Define environment data security perimeters (VPC service controls)
+  - [ ] Set up IAM permissions
+    - [ ] Billing
+    - [ ] Org
+      - [ ] Folder
+        - [ ] Project
+    - *Tips:*
+      - [ ] assign **only groups** IAM roles (not users)
+      - [ ] use `conditions` where possible to limit access scope
+      - [ ] set minimal permissions at each level as needed
+      - [ ] highest permission `Editor` for any project
+  - [ ] Set up Service Accounts
+    - [ ] CI/CD
+    - [ ] Cache
+    - [ ] Database
+    - [ ] App Runtime
+  - [ ] Set up Network
+    - [ ] Document IP address ranges (IPAM)
+      - [ ] Clusters
+        - [ ] secondary ranges
+      - [ ] VMs
+      - [ ] Databases
+      - [ ] Connectors
+      - [ ] Managed services
+      - [ ] Bastion (jump host)
+    - [ ] Create shared VPC (host project)
+      - [ ] VPCs
+        - [ ] Subnets
+        - [ ] Firewall rules
+      - [ ] Cloud Router
+      - [ ] NAT
+    - [ ] Serverless VPC Connector
+  - [ ] Set up Security project
+    - [ ] Enable audit logging at org level
+    - [ ] Create audit logging storage bucket
+    - [ ] Create aggregated audit log sinks to security project
+  - [ ] Set up Devops project
+    - [ ] Override key download policy (for this project)
+    - [ ] Create Terraform service account(s)
+      - [ ] Admin
+      - [ ] Developer (optional)
+    - [ ] Create artifact registry
+      - [ ] Service account permissions
+      - [ ] Container analysis
+      - [ ] Binary authorization
+    - [ ] Cloud Build
+      - [ ] Service account permissions
+      - [ ] Connect Git repositories
+  - [ ] Set up Billing project
+    - [ ] Create BigQuery dataset to store billing data
+    - [ ] Create billing export to bq dataset (only 1 per billing ID)
+    - [ ] Define resource labeling plan
+  - [ ] Set up Monitoring project
+    - [ ] Create initial workspace and add projects above
+    - [ ] Create logging bucket(s)
+    - [ ] Create notification channels
+- [ ] Set up monitoring / alerts
+  - [ ] Billing / budget alerts
+  - [ ] CIS benchmarks
+
+## Project considerations
+- [ ] Add project leins to prevent accidental deletion (i.e. production)
+- [ ] Audit log sink to `security` project
+- [ ] Log sink to `monitoring` project logging bucket
+  - [ ] Add exclusion filters or disable `_Default`
+- [ ] Ensure network resources available
+  - [ ] Plan out or request network resources from shared VPC
+  - [ ] Add as service project
+- [ ] Add only permissions required for tasks
+- [ ] OS Login
+- [ ] Considerations:
+  - [ ] Storage bucket policy and lifecycle
+  - [ ] Data replications and RPO
+  - [ ] Data security perimeter
+  - [ ] Data loss prevention and PII
+  - [ ] Quotas
+  - [ ] Cloud IAP
+  - [ ] Firewall rules
+  - [ ] Monitoring
+    - [ ] Uptime checks
+    - [ ] Define SLO / SLI
+    - [ ] Dashboards
+    - [ ] Alerts
