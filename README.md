@@ -1,4 +1,4 @@
-This content is provided by the team at [DoiT Internationa](https://doit-intl.com), a global product and service organization dedicated to making the public cloud accessible while secure for all.
+This content is provided by the team at [DoiT International](https://doit-intl.com), a global product and service organization dedicated to making the public cloud accessible while secure for all.
 
 # Secure configuration
 ![Example GCP Secure Configuration](./gcp_example.png)
@@ -94,7 +94,7 @@ This content is provided by the team at [DoiT Internationa](https://doit-intl.co
     - [ ] Create notification channels
 - [ ] Set up monitoring / alerts
   - [ ] Billing / budget alerts
-  - [ ] CIS benchmarks
+  - [ ] [CIS Benchmarks](https://gist.github.com/mikesparr/3408145208716ba821d51aa9d10c1650)
 
 ## Project considerations
 - [ ] Add project leins to prevent accidental deletion (i.e. production)
@@ -119,3 +119,29 @@ This content is provided by the team at [DoiT Internationa](https://doit-intl.co
     - [ ] Define SLO / SLI
     - [ ] Dashboards
     - [ ] Alerts
+
+# Helpful links
+- [Best practices for enterprise](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
+- [Creating organizations](https://cloud.google.com/resource-manager/docs/creating-managing-organization)
+- [Migrating projects to org](https://cloud.google.com/resource-manager/docs/migrating-projects-billing)
+- [Migrating projects from org](https://cloud.google.com/resource-manager/docs/project-migration)
+- [GSuite and Cloud Identity](https://cloud.google.com/identity)
+- [Enforce MFA login](https://cloud.google.com/identity/solutions/enforce-mfa)
+- [Service account keys best practices](https://medium.com/@jryancanty/stop-downloading-google-cloud-service-account-keys-1811d44a97d9)
+- [Log exports for compliance](https://cloud.google.com/solutions/exporting-stackdriver-logging-for-compliance-requirements)
+- [Log exclusion filters](https://cloud.google.com/logging/docs/exclusions)
+- [Storage object lifecycles](https://cloud.google.com/storage/docs/lifecycle)
+- [Monitoring and workspaces](https://cloud.google.com/monitoring/workspaces)
+- [Service monitoring (SLO/SLI)](https://cloud.google.com/service-monitoring)
+- [Disaster recovery](https://cloud.google.com/solutions/dr-scenarios-planning-guide)
+- [Velero Kubernetes backups](https://blog.doit-intl.com/google-kubernetes-engine-cluster-migration-with-velero-4a140b018f32)
+- [Project liens](https://cloud.google.com/resource-manager/docs/project-liens)
+- [Labeling best practices](https://blog.doit-intl.com/google-cloud-platform-resource-labeling-best-practices-66fded7ba57)
+- [Billing data exports](https://cloud.google.com/billing/docs/how-to/export-data-bigquery)
+- [VPC service controls](https://cloud.google.com/vpc-service-controls)
+- [Data loss prevention](https://cloud.google.com/dlp)
+- [Remove PII from logs](https://polleyg.dev/posts/bigquery-new-tables-dlp/)
+- [Compliance manager and audit reports](https://cloud.google.com/security/compliance/compliance-reports-manager)
+- [Setting up budget alerts](https://cloud.google.com/billing/docs/how-to/budgets)
+- [Budget alert notifications](https://cloud.google.com/billing/docs/how-to/notify/)
+- [Automated resource scheduling (Zorya from DoiT)](https://blog.doit-intl.com/reduce-google-compute-engine-costs-by-60-with-zorya-gce-instance-scheduler-eae07131cafa)
