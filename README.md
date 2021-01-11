@@ -130,6 +130,7 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
 - [Service account keys best practices](https://medium.com/@jryancanty/stop-downloading-google-cloud-service-account-keys-1811d44a97d9)
 - [Log exports for compliance](https://cloud.google.com/solutions/exporting-stackdriver-logging-for-compliance-requirements)
 - [Log exclusion filters](https://cloud.google.com/logging/docs/exclusions)
+- [Centralize logs across projects](https://blog.doit-intl.com/centralize-logs-from-multiple-projects-on-google-cloud-platform-79aa7256ed0a)
 - [Storage object lifecycles](https://cloud.google.com/storage/docs/lifecycle)
 - [Monitoring and workspaces](https://cloud.google.com/monitoring/workspaces)
 - [Service monitoring (SLO/SLI)](https://cloud.google.com/service-monitoring)
