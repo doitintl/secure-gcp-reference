@@ -47,11 +47,6 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
       - [ ] use `conditions` where possible to limit access scope
       - [ ] set minimal permissions at each level as needed
       - [ ] highest permission `Editor` for any project
-  - [ ] Set up Service Accounts
-    - [ ] CI/CD
-    - [ ] Cache
-    - [ ] Database
-    - [ ] App Runtime
   - [ ] Set up Network
     - [ ] Document IP address ranges (IPAM)
       - [ ] Clusters
@@ -104,6 +99,11 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
 - [ ] Ensure network resources available
   - [ ] Plan out or request network resources from shared VPC
   - [ ] Add as service project
+- [ ] Set up Service Accounts
+  - [ ] CI/CD
+  - [ ] Cache
+  - [ ] Database
+  - [ ] App Runtime
 - [ ] Add only permissions required for tasks
 - [ ] OS Login
 - [ ] Considerations:
