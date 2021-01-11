@@ -1,6 +1,6 @@
 This content is provided by the team at [DoiT International](https://doit-intl.com), a global product and service organization dedicated to making the public cloud accessible while secure for all.
 
-# Secure configuration
+# Secure configuration example
 ![Example GCP Secure Configuration](./gcp_example.png)
 
 # Checklists
