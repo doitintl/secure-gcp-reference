@@ -103,6 +103,7 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
   - [ ] CI/CD
   - [ ] Cache
   - [ ] Database
+  - [ ] Storage
   - [ ] App Runtime
 - [ ] Add only permissions required for tasks
 - [ ] OS Login
