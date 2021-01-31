@@ -112,6 +112,7 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
   - [ ] Data replications and RPO
   - [ ] Data security perimeter
   - [ ] Data loss prevention and PII
+  - [ ] Label resources
   - [ ] Quotas
   - [ ] Cloud IAP
   - [ ] Firewall rules
