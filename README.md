@@ -125,6 +125,8 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
 # Helpful links
 - [Best practices for enterprise](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
 - [GCP for AWS professionals](https://cloud.google.com/docs/compare/aws)
+- [Inter-region latency and throughput](https://datastudio.google.com/u/0/reporting/fc733b10-9744-4a72-a502-92290f608571/page/70YCB)
+- [Lowest-latency region check](https://gcping.com)
 - [Creating organizations](https://cloud.google.com/resource-manager/docs/creating-managing-organization)
 - [Migrating projects to org](https://cloud.google.com/resource-manager/docs/migrating-projects-billing)
 - [Migrating projects from org](https://cloud.google.com/resource-manager/docs/project-migration)
