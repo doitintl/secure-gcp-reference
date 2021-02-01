@@ -138,6 +138,7 @@ This content is provided by the team at [DoiT International](https://doit-intl.c
 - [Centralize logs across projects](https://blog.doit-intl.com/centralize-logs-from-multiple-projects-on-google-cloud-platform-79aa7256ed0a)
 - [Storage object lifecycles](https://cloud.google.com/storage/docs/lifecycle)
 - [Monitoring and workspaces](https://cloud.google.com/monitoring/workspaces)
+- [Request Annotation with logging](https://medium.com/google-cloud/request-annotation-with-cloud-audit-logging-and-monitoring-on-gcp-ce8e8671c086) 
 - [Service monitoring (SLO/SLI)](https://cloud.google.com/service-monitoring)
 - [Disaster recovery](https://cloud.google.com/solutions/dr-scenarios-planning-guide)
 - [Velero Kubernetes backups](https://blog.doit-intl.com/google-kubernetes-engine-cluster-migration-with-velero-4a140b018f32)
